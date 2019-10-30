@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-left"><div class="iconfont back-icon">&#xe623;</div></div>
-    <div class="header-input"><span class="iconfont">&#xe6a8;</span>输入城市景点游玩主题</div>
+    <div class="header-input"><span class="iconfont search-icon">&#xe6a8;</span>输入城市景点游玩主题</div>
     <div class="header-right">城市<span class="iconfont arrow-icon">&#xe600;</span></div>
   </div>
 </template>
@@ -12,37 +12,43 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-  @import '~styles/varibles.styl'
-  .header
-    display: flex
-    justify-items: center
-    background: $bgColor
-    color: #fff
-    .header-left
-      width: 43px
-      line-height: 43px
-      height: 43px
-      .back-icon
-        text-align: center
-        font-size: 30px
-    .header-right
-      width: 64px
-      line-height: 43px
-      color: #ffffff
-      text-align: center
-      font-size: 14px
-      .arrow-icon
-        font-size: 12px
-    .header-input
-      flex: 1
-      font-size: 14px
-      margin-top: 6px
-      margin-left: 6px
-      padding-left: 10px
-      height: 32px
-      line-height: 32px
-      background: #ffffff
-      border-radius: 5px
-      color: #ccc
+<style  scoped>
+  .header {
+    width: 100%;
+    height: 43px;
+    background-color: #00bcd4;
+    display: flex;
+    align-items: center;
+  }
+  .header-left {
+    width: 20px;
+    margin-left: 10px;
+  }
+  .header-left .back-icon{
+    font-size: 20px;
+  }
+  .header-input {
+    flex: 1;
+    margin-top:5px;
+    margin-left:5px;
+    margin-bottom: 5px;
+    padding-left:5px;
+    font-size:15px;
+    height:33px;
+    line-height:33px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .header-input .search-icon {
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+  .header-right {
+    width: 50px;
+    font-size:15px;
+    margin-left: 5px;
+  }
+  .header-right .arrow-icon {
+    font-size:13px;
+  }
 </style>

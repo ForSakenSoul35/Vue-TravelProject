@@ -1,7 +1,6 @@
 <template>
   <div class="wrap">
     <swiper :options="swiperOption" >
-      <!-- slides -->
       <swiper-slide>
         <img class="swiper-image" src="@/assets/swiper1.jpeg">
       </swiper-slide>
@@ -25,15 +24,13 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-.wrap >>> .swiper-pagination-bullet-active
-  background: #fff
-.wrap
-  width: 100%
-  // height: 25.28vw
-  height: 0
-  padding-bottom: 25.28%
-  backgroun: #eee
-  .swiper-image
-    width: 100%
+<style  scoped>
+  .wrap{
+    width: 100%;
+    height:180px;
+  }
+  .swiper-image{
+    height:180px;
+    width:100%;
+  }
 </style>
